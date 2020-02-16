@@ -37,8 +37,11 @@ if('serviceWorker' in navigator){
      })
 }
 
-// var swready = await navigator.serviceWorker.ready;
-// sub = swready.pushManager.subscribe({
-//     userVisibleOnly: true,
-//     applicationServerId: '11221'
-// });
+document.querySleector('subscribe').addEventListener('click', async evt=>{
+    let swready = await navigator.serviceWorker.ready;
+    let sub = swready.pushManager.subscribe({
+        userVisibleOnly: true,
+        applicationServerKey: 'BDPGfy5CLOxEPO-EVEbBpgT-WtSdWvBPJa4tt_LlZKtSAeeYUi5k0hpMHy7pFv3L5lYX4sh2T_fg61D9rK-OryM'
+    });
+    console.log(JSON.stringify(sub));
+})
