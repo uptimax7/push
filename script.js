@@ -37,7 +37,7 @@ if('serviceWorker' in navigator){
      })
 }
 
-document.querySleector('subscribe').addEventListener('click', async evt=>{
+document.querySelector('.subscribe').addEventListener('click', async evt=>{
     let swready = await navigator.serviceWorker.ready;
     let sub = swready.pushManager.subscribe({
         userVisibleOnly: true,
