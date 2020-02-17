@@ -1,13 +1,13 @@
 var push = require('web-push');
 
-//let keys = push.generateVAPIDKeys();
+//console.log(push.generateVAPIDKeys());
 
 endpoint = { publicKey:
-    'BDPGfy5CLOxEPO-EVEbBpgT-WtSdWvBPJa4tt_LlZKtSAeeYUi5k0hpMHy7pFv3L5lYX4sh2T_fg61D9rK-OryM',
-   privateKey: 'Zspc_H_67-R9sxfs3DVfwmbtiGL4q2r3sp9eJngglTA' };
+    'BDYWCaTK_92ro04adwa-gwZ1BIJUnXGVwneH0dZ52BAlW3xfOB--ScUu08nCk7ACo0MDep-3opoFQ-ZH0qk1VEc',
+   privateKey: 'qtvYxmnfRrJVeiTL-klUCXpTTknSZ_1ovOWJ4_uUKVk' };
 
-push.setVapidDetails('uptimax7@gmail.com', endpoint.publicKey, endpoint.privateKey);
+push.setVapidDetails('fetusmaxwell7@gmail.com', endpoint.publicKey, endpoint.privateKey);
 
-sub = {};
+sub = {}
 
 push.sendNotification(sub, 'this is awesome');
