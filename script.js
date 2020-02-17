@@ -39,7 +39,7 @@ if('serviceWorker' in navigator){
 
 document.querySelector('.subscribe').addEventListener('click', async evt=>{
     let swready = await navigator.serviceWorker.ready;
-    let sub = swready.pushManager.subscribe({
+    let sub = await swready.pushManager.subscribe({
         userVisibleOnly: true,
         applicationServerKey: 'BDPGfy5CLOxEPO-EVEbBpgT-WtSdWvBPJa4tt_LlZKtSAeeYUi5k0hpMHy7pFv3L5lYX4sh2T_fg61D9rK-OryM'
     });
