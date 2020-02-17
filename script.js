@@ -41,6 +41,7 @@ document.querySelector('.subscribe').addEventListener('click', async evt=>{
     let swready = await navigator.serviceWorker.ready;
     let sub = await swready.pushManager.subscribe({
         userVisibleOnly: true,
+        applicationServerKey:'BDYWCaTK_92ro04adwa-gwZ1BIJUnXGVwneH0dZ52BAlW3xfOB--ScUu08nCk7ACo0MDep-3opoFQ-ZH0qk1VEc'
     });
     console.log(JSON.stringify(sub));
 })
