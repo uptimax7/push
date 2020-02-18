@@ -6,7 +6,7 @@ self.addEventListener('install', evt=>{
    cache.addAll(asset);
   }
     )
-  });
+  )});
  
  self.addEventListener('push', evt=>{
 var data = evt.data.text();
